@@ -17,12 +17,12 @@ async def root():
 
 @app.get("/hello/{name}")
 async def say_hello(name: str):
-    return {"message": f"Awesome cloud developer dff9 says hello {name}"}
+    return {"message": f"Awesome cloud developer xz3283 says hello {name}"}
 
 
 @app.get("/hello_text/{name}")
 async def say_hello_text(name: str):
-    the_message = f"Awesome cloud developer dff9 says Hello {name}"
+    the_message = f"Awesome cloud developer xz3283 says Hello {name}"
     rsp = Response(content=the_message, media_type="text/plain")
     return rsp
 
@@ -35,3 +35,4 @@ async def get_students():
 
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8012)
+    # vicorn.run(app, host="0.0.0.0", port=8012)
